@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Recorder.js demo with record, stop and pause</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="recording_style.css">
+  </head>
+  <body>
+  <div class="container">
+    <h1>2/20</h1>
+    <p>  <i> In your recording, please tell us: </i> What <i>don’t</i> you do on the weekends that you <i>do</i> do during the week?
+        What <i>don’t</i> you do during the week that you <i>do</i> do on the weekends?
+    </p>
+
+    <p>Press RECORD to begin. (Be sure to allow microphone access, if prompted.) </p>
+    <p> When you are finished talking, press STOP. Your recording will appear below; press UPLOAD. Then, press NEXT.</a></p>
+    <div id="controls">
+  	 <button id="recordButton">Record</button>
+  	 <button id="pauseButton" disabled>Pause</button>
+  	 <button id="stopButton" disabled>Stop</button>
+    </div>
+    <div id="formats">Format: start recording to see sample rate.</div>
+    <br/>
+    <h3>Your recording will appear here:</h3>
+    <br/>
+  	<ol id="recordingsList"></ol>
+
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  	<script src="js/app.js"></script>
+
+  </div>
+  </body>
+</html>
